@@ -96,9 +96,9 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     // Adiciona o fragment no centro da tela
-   /* protected void replaceFragment(Fragment frag) {
-        toast("OK!");
-    }*/
+   protected void replaceFragment(Fragment frag) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.container_fragmanet_main, frag,"TAG").commit();
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
