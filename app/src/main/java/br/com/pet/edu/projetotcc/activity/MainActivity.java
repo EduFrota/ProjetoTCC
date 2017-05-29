@@ -1,13 +1,12 @@
 package br.com.pet.edu.projetotcc.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import br.com.pet.edu.projetotcc.R;
-import br.com.pet.edu.projetotcc.fragments.DogFragment;
+import br.com.pet.edu.projetotcc.fragments.DogsFragment;
 
 public class MainActivity extends BaseActivity {
 
@@ -17,7 +16,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         setUpToolbar();
         setupNavDrawer();
-        replaceFragment(new DogFragment());
+        replaceFragment(new DogsFragment());
     }
 
     @Override

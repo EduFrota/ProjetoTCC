@@ -12,7 +12,7 @@ import br.com.pet.edu.projetotcc.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DogFragment extends BaseFragment {
+public class DogsFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
