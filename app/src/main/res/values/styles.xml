@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -13,7 +14,6 @@
         <item name="windowNoTitle">true</item>
     </style>
     <!-- Customizações para Android 5.0 -->
-
 
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

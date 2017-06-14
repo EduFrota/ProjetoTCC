@@ -1,6 +1,10 @@
 package br.com.pet.edu.projetotcc.domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import br.com.pet.edu.projetotcc.R;
+
 
 /**
  * Created by edu-f on 26/05/2017.
@@ -25,5 +29,7 @@ public class Dog implements Serializable {
                 ", temperamento='" + temperamento + '\'' +
                 '}';
     }
+
 }
+
 

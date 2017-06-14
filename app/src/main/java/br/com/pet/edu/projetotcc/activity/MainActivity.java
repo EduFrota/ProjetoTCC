@@ -6,6 +6,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import br.com.pet.edu.projetotcc.R;
+import br.com.pet.edu.projetotcc.fragments.DogFragment;
+import br.com.pet.edu.projetotcc.fragments.DogTabFragment;
 import br.com.pet.edu.projetotcc.fragments.DogsFragment;
 
 public class MainActivity extends BaseActivity {
@@ -16,7 +18,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         setUpToolbar();
         setupNavDrawer();
-        replaceFragment(new DogsFragment());
+        replaceFragment(new DogTabFragment());
     }
 
     @Override

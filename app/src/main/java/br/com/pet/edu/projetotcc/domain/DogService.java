@@ -10,12 +10,13 @@ import java.util.List;
  */
 
 public class DogService {
-    public static List<Dog> getDog(Context context, int nome){
+    public static List<Dog> getDog(Context context){
         List<Dog> dogs = new ArrayList<Dog>();
         for(int i = 0;i<20;i++){
+
             Dog d = new Dog();
             d.nome = "Nome: "+i;
-            d.raca = "raca: "+1;
+            d.raca = "raca: "+i;
             d.temperamento = "Temperamento: "+i;
             d.url_foto="https://unsplash.com/search/dog?photo=E-1tnSNP0y4";
             dogs.add(d);
