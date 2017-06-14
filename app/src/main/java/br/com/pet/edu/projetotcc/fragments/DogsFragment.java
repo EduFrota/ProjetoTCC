@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -13,6 +14,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
+import org.parceler.Parcels;
 
 import java.util.List;
 
@@ -36,6 +39,12 @@ public class DogsFragment extends BaseFragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setHasFixedSize(true);
+        view.findViewById(R.id.bt_fab).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                snack(recyclerView,"FAB Button");
+            }
+        });
         return view;
     }
     public static DogsFragment newInstance(String tab) {
@@ -61,7 +70,7 @@ public class DogsFragment extends BaseFragment {
             public void onClickDog(View view, int idx) {
                 Dog dog = dogs.get(idx);
                 Intent intent = new Intent(getContext(), DogActivity.class);
-                intent.putExtra("dog", dog);
+                intent.putExtra("dog", Parcels.wrap(dog));
                 startActivity(intent);
 
             }

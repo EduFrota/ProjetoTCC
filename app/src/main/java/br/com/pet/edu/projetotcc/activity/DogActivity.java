@@ -7,7 +7,6 @@ import org.parceler.Parcels;
 import br.com.pet.edu.projetotcc.R;
 import br.com.pet.edu.projetotcc.domain.Dog;
 import br.com.pet.edu.projetotcc.fragments.DogFragment;
-import br.com.pet.edu.projetotcc.fragments.PetFragment;
 
 public class DogActivity extends BaseActivity{
 
